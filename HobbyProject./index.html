@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>
+        Campaign Grid View
+     </title>
+        <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body>
+         <div class="navbar">
+                <a href="#">Campaigns</a>
+                <a href="#">Activities</a>
+                <a href="#">Content</a>
+                <a href="#">Manage</a>
+           </div> 
+           <div class="heading">
+                <h2>Campaigns</h2>
+                <button class ="createbutton">Create Campaign</button>
+           </div>  
+            <div class="menu">
+            <button class="btn" ><i class="fa fa-bars"></i>List</button>
+            <button class="btn" ><i class="fa fa-th-large"></i> Grid</button>
+            <button class  = "filter" id = "mybtn"><i class="fa fa-filter" aria-hidden="true"></i></button>
+            <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close">&times;</span>
+           <form>
+               <label>Label</label>
+               <input type="text" placeholder = "enter labels" ><br/>
+               <label>True</label>
+                <input type =radio>
+               <label>False</label>
+               <input type =radio>
+         </form>
+         </div>
+
+</div>    
+           </div>       
+       <div class="container">          
+            <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Smita Kumari,4 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+            <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Navya Agarwal,5 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Sunday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+            <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Apoorva Khera,6 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+            <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Smita Kumari,4 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+            <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Smita Kumari,4 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+            <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Smita Kumari,4 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+            <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Smita Kumari,4 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+            <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Smita Kumari,4 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+            <div class="col">
+                <div>Campaign'titlekokokoko</div>
+                <button class = "dropdown" onclick="myFunction()">...</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div><i class="fa fa-trash" aria-hidden="true"> Delete</i></div>
+                    <div><i class="fa fa-pencil-square-o" aria-hidden="true"> Edit</i></div>
+                </div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Smita Kumari,4 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+            <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Smita Kumari,4 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+             <div class="col">
+                <div>Campaign'title</div>
+                <div class = "dropdown">...</div>
+                <div class = "avatar"><img class="middle" src="avatar.png" alt="Avatar"> Smita Kumari,4 days ago</div>
+                <div class = "status">Active</div>
+                <div class = "start"></div>
+                <div class="starttext"> Monday July 30th 2018</div>
+                <div class = "mid"></div>
+                <div class = "end"></div>
+                <div class ="endtext">Thursday August 30th 2018</div>   
+             </div>
+       </div>
+       
+     <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("mybtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>      
+    </body>
+      
+    
+</html>

@@ -1,0 +1,247 @@
+body{
+    
+    font-family: monospace;
+    margin:0;
+    background-color: whitesmoke;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr); 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding:10px;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding:0 5px;
+    align-items: flex-start;
+}
+a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.heading{
+     display:flex;
+}
+.menu{
+ display:flex;
+ padding:10px;
+ flex-direction: row-reverse;
+}
+.createbutton{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 25px;
+    padding: 3px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    align-items: flex-end;
+}
+h2{
+   align-items: flex-start;  
+}
+.filter{
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  position: relative;
+}
+.modal{
+    
+    
+}
+
+.col{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    background-color:white;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    margin: 5px;
+    padding:10px;
+}
+
+.campaignName{
+    grid-row-start: 1;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.dropdown{
+    grid-column-start:8;      
+    background-color: white;
+    border-radius:0px;
+    padding: 2px;
+    color:black;
+    border:none;
+    position: relative;
+}
+
+
+.status{
+    grid-row-start: 3;
+    grid-column-start:1;
+    grid-column-end:1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    background-color: dodgerblue; 
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding:5px;
+    width:45px;
+}
+.avatar{
+ grid-row-start:2;
+ grid-column-start:1; 
+ grid-column-end:8;   
+}
+img.middle {
+  width: 30px;
+  height: 30px; 
+  vertical-align: middle;
+}
+.start{
+    grid-row-start:4;
+    grid-column-start:1;
+    grid-column-end:8;   
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+.starttext{
+    grid-row-start:4;
+    grid-column-start:1;
+    grid-column-end:8;  
+    padding-left:25px;
+    padding-bottom: 1px;
+    padding-top: 5px;
+}
+.mid{
+    grid-row-start:5;
+    grid-column-start:1;
+    grid-column-end:8;  
+    width:4px;
+    height:10px;
+    margin-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: darkgray;
+}
+.end{
+    grid-row-start:6;
+    grid-column-start:1;
+    grid-column-end:8;  
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: darkgray;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+.endtext{
+    grid-row-start:6;
+    grid-column-start:1;
+    grid-column-end:8;  
+    padding-left:25px;
+    padding-bottom: 1px;
+    padding-top: 5px;
+}
+
+.btn{ 
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.filter:hover {
+  background-color: #ddd;
+}
+
+.filter.active {
+  background-color: #666;
+  color: white;
+}
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left:150px;
+  margin-top: 20px;
+}
+.show {display: block;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 75%;
+  top: 5%;
+  width: 25%; /* Full width */
+  height: 25%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .col{
+    width: 100%;
+  }
+}
+
